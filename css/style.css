@@ -15,10 +15,45 @@ html {
 .width-90 {
     width: 90%;
 }
+.margin-auto {
+    margin: auto;
+}
+
+/* header */
+header {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    background-color: rgb(32, 30, 30);
+}
+nav {
+
+    height: 80px;
+}
+nav .btn .symbol i {
+    display: block;
+}
+.btn {
+    height: 100%;
+}
+.col-left {
+    width: 30%;
+}
+.col-center {
+    width: 40%;
+}
+.col-right {
+    width: 30%;
+}
+.div-centered {
+    margin: auto;
+}
 
 /* main */
 main {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     overflow: auto;
 }
 /* main container */
