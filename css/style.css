@@ -3,4 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    font-size: 100%;
+    background-color: black;
+}
 
+/* utilities */
+.display-flex {
+    display: flex;
+}
+.width-90 {
+    width: 90%;
+}
+
+/* main */
+main {
+    height: calc(100vh - 100px);
+    overflow: auto;
+}
+/* main container */
+.main-container {
+    min-width: 600px;
+    margin: auto;
+    overflow: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.img-container {
+}
+.main-container .img-container img {
+    width: 150px;
+}
