@@ -19,69 +19,87 @@ html {
 .margin-auto {
     margin: auto;
 }
+.green-text {
+    color: rgb(141, 235, 0);
+}
+.red-text {
+    color: red;
+}
 
 /* header */
-header {
+nav {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
+    min-width: 600px;
     color: white;
     background-color: rgb(32, 30, 30);
 }
-nav {
-    /* height: 80px; */
-}
-nav .btn .symbol i {
-    display: block;
-}
 .btn {
-    padding: 0.5em;
+    padding: 0.2em;
     border-radius: 5px;
-    margin: 0.3em;
+    margin: 0.2em;
 }
 .btn:hover {
     background-color: grey;
 }
-/* colonna sx */
+nav {
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+
+/* colonne */
 .col-left {
-    width: 30%;
+    /* width: 20%; */
     justify-content: flex-start;
     align-items: center;
 }
-.col-left .btn .symbol {
-    flex-direction: column;
-}
-.col-left .symbol i {
-    font-size: 1.8em;
-    text-align: center;
-}
-.col-left .symbol span {
-    font-size: 0.8em;
-    text-align: center;
-}
-.col-left .symbol > * {
-padding: 0.2em 0.5em;
-}
-.col-left .arrow i {
-    font-size: 0.7em;
-    padding: 0.2em;
-    border-radius: 5px;
-}
-.col-left .arrow i:hover {
-    background-color: lightgray;
-}
-
-
 .col-center {
-    width: 40%;
+    /* width: 60%; */
+    justify-content: center;
+    align-items: center;
 }
 .col-right {
-    width: 30%;
+    /* width: 20%; */
+    justify-content: flex-end;
+    align-items: center;
 }
-.div-centered {
-    margin: auto;
+.btn .symbol {
+    flex-direction: column;
 }
+.symbol i {
+    font-size: 1.6em;
+    text-align: center;
+}
+.symbol span {
+    font-size: 0.6em;
+    text-align: center;
+}
+.symbol > * {
+    padding: 0.2em 0.5em;
+}
+.arrow i {
+    font-size: 0.5em;
+    padding: 0.4em;
+    border-radius: 5px;
+}
+.arrow i:hover {
+    background-color: lightgray;
+}
+.end-meeting {
+    height: 100%;
+    font-size: 0.6em;
+    padding: 0 1.3em;
+    background-color: rgb(94, 91, 91);
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
 
 /* main */
 main {
