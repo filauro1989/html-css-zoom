@@ -5,6 +5,7 @@
 }
 html {
     font-size: 100%;
+    font-family: sans-serif;
     background-color: black;
 }
 
@@ -29,18 +30,49 @@ header {
     background-color: rgb(32, 30, 30);
 }
 nav {
-
-    height: 80px;
+    /* height: 80px; */
 }
 nav .btn .symbol i {
     display: block;
 }
 .btn {
-    height: 100%;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin: 0.3em;
 }
+.btn:hover {
+    background-color: grey;
+}
+/* colonna sx */
 .col-left {
     width: 30%;
+    justify-content: flex-start;
+    align-items: center;
 }
+.col-left .btn .symbol {
+    flex-direction: column;
+}
+.col-left .symbol i {
+    font-size: 1.8em;
+    text-align: center;
+}
+.col-left .symbol span {
+    font-size: 0.8em;
+    text-align: center;
+}
+.col-left .symbol > * {
+padding: 0.2em 0.5em;
+}
+.col-left .arrow i {
+    font-size: 0.7em;
+    padding: 0.2em;
+    border-radius: 5px;
+}
+.col-left .arrow i:hover {
+    background-color: lightgray;
+}
+
+
 .col-center {
     width: 40%;
 }
@@ -65,6 +97,7 @@ main {
     justify-content: space-around;
 }
 .img-container {
+    margin: 0.3em 0;
 }
 .main-container .img-container img {
     width: 150px;
