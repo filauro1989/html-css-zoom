@@ -29,6 +29,7 @@ html {
 /* header */
 nav {
     position: fixed;
+    z-index: 999;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -103,19 +104,33 @@ nav {
 
 /* main */
 main {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 65px);
     overflow: auto;
+    position: relative;
+}
+.top-buttons-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.3em;
+    font-size: 0.6em;
+}
+.top-buttons-container > * {
+    padding: 0.3em;
+    border-radius: 3px;
+    background-color: grey;
+    margin: 0 0.2em;
 }
 /* main container */
 .main-container {
-    min-width: 600px;
+    padding: 4em 4em 0 4em;
     margin: auto;
     overflow: auto;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-.img-container {
-    margin: 0.3em 0;
 }
 .main-container .img-container img {
     width: 150px;
