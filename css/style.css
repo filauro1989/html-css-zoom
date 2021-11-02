@@ -98,10 +98,6 @@ nav {
     justify-content: center;
 }
 
-
-
-
-
 /* main */
 main {
     height: calc(100vh - 65px);
@@ -130,7 +126,20 @@ main {
     margin: auto;
     overflow: auto;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+}
+.main-container .img-container {
+    position: relative;
+    margin: 0.3em;
+}
+.main-container .img-container .speaker-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 0.8em;
+    padding: 0.4em;
 }
 .main-container .img-container img {
     width: 150px;
